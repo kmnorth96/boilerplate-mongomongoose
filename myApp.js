@@ -1,5 +1,11 @@
-require('dotenv').config();
+import mongoose from "mongoose";
+import dotenv from "dotenv";
+dotenv.config();
 
+mongoose.connect(
+  "mongodb+srv://Kmnor:Password@cluster0.by7ad0x.mongodb.net/Cluster0?retryWrites=true&w=majority",
+  { useNewUrlParser: true, useUnifiedTopology: true }
+);
 
 let Person;
 
